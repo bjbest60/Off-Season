@@ -1,20 +1,8 @@
-﻿start_at = bedroom
+start_at = bedroom
 loading_screen = off_season
 start_theme = main_theme
 
-// Zildud Henderson.  Lvl 1 MEI employee.  Orc.  50 XP.  10-20 gold.
-
 locations {
-
-//   winter_truck : location "Uncle Carroll has been working on the engine of his truck for the past few weeks.  He keeps saying something about increasing the light years per dream."
-//      header = "Back woods"
-//      graphic = "winter_truck"
-//      {on_command {
-//         : match "enter _; go truck" {
-//            : print "Maybe you'll even try driving it once the engine's rebuilt.";
-//            }
-//         }
-//      }
 
    winter_house : location "It's kind of a gray winter morning, and it must have snowed a bit overnight.  The world is cold and fresh."
       header = "House"
@@ -7790,7 +7778,10 @@ on_command {
       }
 
    : match "open umbrella; fly _" {
-      : if ((is_carried "umbrella" || is_beside "umbrella") && !is_at "farm") {
+      : if (is_carried "umbrella" && (is_at "forest" || is_at "southroad") && !is_at "farm" && !is_at "windmill_top") {
+         : print "You open the umbrella and it begins to tug your arm upward. Rather than getting stuck in a tree or, worse, the sky, you quickly close it again.";
+      }
+      : else_if ((is_carried "umbrella" || is_beside "umbrella") && !is_at "farm" && !is_at "clearing_2" && !is_at "death_2") {
          : print "You open and close the umbrella, but it doesn't seem to do much.";
          }
       }
@@ -8957,7 +8948,6 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
@@ -9067,7 +9057,7 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
+
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
@@ -9177,7 +9167,7 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
+
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
@@ -9286,7 +9276,7 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
+
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
@@ -9397,7 +9387,7 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
+
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
@@ -9518,7 +9508,7 @@ themes {
          ask_quit                                       = Do you wish to quit the game?
          be_more_specific                               = Be more specific ...\s
          cant_see_one_of_those                          = You can't see one of those.
-         cant_take                                      = You can't take that.
+
          dont_have_one_of_those                         = You don't have one of those!
          exit_list_additional_exits_are_located_verbose = Additional exits are located\s
          exit_list_end_text                             = 
