@@ -3,7 +3,7 @@
 
 **Adventuron Source for Off-Season at the Dream Factory, entered in IFComp '21**
 
-Compatible with Adventuron 1.0.0 beta 74k.  As Adventuron is constantly being updated, some aspects of this source will likely need to be revised before the game will compile with any other version of Adventuron.
+Compatible with Adventuron 1.0.0 beta 75.  As Adventuron is constantly being updated, some aspects of this source will likely need to be revised before the game will compile with any other version of Adventuron.
 
 The source code itself is in Off-Season_at_the_Dream_Factory_FINAL.txt.  The other files are the published game.  The source code requires the images folder included here.  In order to display them properly, they must be appropriately uploaded relative to index.html.
 
