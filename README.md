@@ -1,5 +1,5 @@
 # Off-Season
-<b>Off-Season at the Dream Factory by B.J. Best</b>
+<b><i>Off-Season at the Dream Factory</i> by B.J. Best</b>
 
 **Adventuron source and published files for Off-Season at the Dream Factory, entered in IFComp '21**
 
